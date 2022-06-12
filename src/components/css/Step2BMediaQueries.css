@@ -1,0 +1,533 @@
+@media (max-width: 1470px) {
+	.step2Bformcontent .Step2A {
+		max-width: 28%;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 1400px) {
+	.step2Bformcontent .example-nav,
+	.step2Bformcontent .footer {
+		display: none;
+	}
+
+	.step2Bformcontent #dateWarning {
+		margin-left: 13.7em;
+	}
+
+	.step2Bformcontent .interestsCards {
+		max-width: 47%;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 1300px) {
+	.step2Bformcontent .dateAndFlight {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.step2Bformcontent #flightText {
+		margin-bottom: 0;
+		margin-top: 1em;
+	}
+
+	.step2Bformcontent #flightText,
+	.step2Bformcontent #datePick {
+		margin-right: 1em;
+	}
+
+	.step2Bformcontent #dateWarning {
+		display: none;
+	}
+
+	.step2Bformcontent #dateWarningUpper {
+		display: block;
+		font-weight: 600;
+		font-size: 1.15em;
+		margin-bottom: -2em;
+		margin-top: 1em;
+		margin-left: 1.5em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 1250px) {
+	.step2Bformcontent .dates {
+		width: 50%;
+	}
+
+	.step2Bformcontent .flight {
+		width: 55%;
+		margin-top: 1em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 1200px) {
+	.step2Bformcontent .dates {
+		width: 60%;
+	}
+
+	.step2Bformcontent .flight {
+		width: 60%;
+	}
+
+	.step2Bformcontent #dateWarningUpper {
+		margin-bottom: -1.5em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 1050px) {
+	.step2Bformcontent .dates {
+		width: 70%;
+	}
+
+	.step2Bformcontent .flight {
+		width: 70%;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 1000px) {
+	.step2Bformcontent .dates {
+		width: 80%;
+	}
+
+	.step2Bformcontent .flight {
+		width: 80%;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 940px) {
+	.step2Bformcontent .interestsCards:nth-child(5) .card-text {
+		font-size: small;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 800px) {
+	.step2Bformcontent .dates {
+		width: 90%;
+	}
+
+	.step2Bformcontent .flight {
+		width: 90%;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 790px) {
+	.step2Bformcontent .interestsCards:nth-child(5) .card-text {
+		font-size: x-small;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 700px) {
+	.step2Bformcontent .dates {
+		width: 100%;
+	}
+
+	.step2Bformcontent .flight {
+		width: 100%;
+	}
+
+	.step2Bformcontent #dateWarningUpper {
+		margin-left: 0.5em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 650px) {
+	.step2Bformcontent .dates {
+		width: 110%;
+	}
+
+	.step2Bformcontent .flight {
+		width: 110%;
+	}
+
+	.step2Bformcontent .interestsCards {
+		max-width: 100%;
+		margin-top: 1em;
+	}
+
+	.step2Bformcontent .interestsCards:nth-child(1) {
+		margin-top: 0em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 600px) {
+	.step2Bformcontent .dates {
+		width: 120%;
+	}
+
+	.step2Bformcontent .flight {
+		width: 120%;
+	}
+
+	.step2Bformcontent #dateWarningUpper {
+		margin-left: -1.5em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 550px) {
+	.step2Bformcontent .dates {
+		width: 130%;
+		margin-left: -1em;
+	}
+
+	.step2Bformcontent .flight {
+		width: 130%;
+		margin-left: -1em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 500px) {
+	.step2Bformcontent .dates {
+		width: 150%;
+		margin-left: -1.5em;
+	}
+
+	.step2Bformcontent .flight {
+		width: 150%;
+		margin-left: -1.5em;
+	}
+
+	.step2Bformcontent #dateWarningUpper {
+		margin-left: -0.7em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 480px) {
+	.step2Bformcontent .dates {
+		width: 100%;
+	}
+
+	.step2Bformcontent .flight {
+		width: 100%;
+	}
+
+	.step2Bformcontent #datePick,
+	.step2Bformcontent #flightText {
+		display: none;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 1145px) {
+	.step2Bformcontent .cards {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.step2Bformcontent .Step2A {
+		max-width: 45%;
+		height: max-content;
+	}
+
+	.step2Bformcontent .transferCard {
+		margin-top: 4em;
+	}
+
+	.step2Bformcontent .transferCardTop {
+		margin-top: 2em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 880px) {
+	.step2Bformcontent .card-text {
+		font-size: small;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 730px) {
+	.step2Bformcontent #heading {
+		font-size: 2.5em;
+	}
+
+	.step2Bformcontent #para-text {
+		margin-top: 0;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 765px) {
+	.step2Bformcontent .card-text {
+		font-size: x-small;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 650px) {
+	.step2Bformcontent .Step2A {
+		max-width: 45%;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 615px) {
+	.step2Bformcontent #heading {
+		font-size: 2em;
+	}
+
+	.step2Bformcontent .Step2A {
+		max-width: 48%;
+		margin: 1%;
+	}
+
+	.step2Bformcontent .transferCard {
+		margin-top: 3em;
+	}
+
+	.step2Bformcontent .transferCardTop {
+		margin-top: 1em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 580px) {
+	.step2Bformcontent .cards {
+		justify-content: center;
+	}
+
+	.step2Bformcontent .Step2A {
+		max-width: 85%;
+		margin: 3%;
+	}
+
+	.step2Bformcontent .transferCard {
+		margin-top: 3em !important;
+	}
+
+	.step2Bformcontent .transferCardTop {
+		margin-top: 1em;
+	}
+
+	.step2Bformcontent .transferCardTop:nth-child(2) {
+		margin-top: 3em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 550px) {
+	.step2Bformcontent .breadcrumb {
+		transform: scale(0.7);
+		margin-bottom: -1em;
+		margin-left: -1.5em;
+		width: 116%;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 501px) {
+	.step2Bformcontent #heading {
+		font-size: 1.5em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 470px) {
+	.step2Bformcontent .Step2A {
+		max-width: 90%;
+		margin: 3%;
+	}
+
+	.step2Bformcontent #para-text {
+		font-size: small;
+	}
+
+	.step2Bformcontent .cards.step2Bformcontent .between {
+		flex-wrap: wrap;
+	}
+
+	.step2Bformcontent .MuiButton-root {
+		width: 100% !important;
+	}
+
+	.step2Bformcontent #next {
+		margin-top: 1em;
+	}
+
+	.step2Bformcontent #hide-prev {
+		display: none;
+	}
+
+	.step2Bformcontent #transferOption {
+		font-size: medium;
+	}
+
+	.step2Bformcontent #transferOptionButton {
+		transform: scale(1.1) !important;
+		margin-top: 0.6em !important;
+	}
+
+	.step2Bformcontent .buttons {
+		flex-direction: column;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 450px) {
+	.step2Bformcontent .breadcrumb {
+		margin-left: -2.5em;
+		width: 131%;
+	}
+
+	.step2Bformcontent .h6 {
+		font-size: small;
+	}
+
+	.step2Bformcontent #margin3em {
+		font-size: 1.1rem;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 400px) {
+	.step2Bformcontent .breadcrumb {
+		margin-left: -4em;
+		width: 151%;
+	}
+
+	.step2Bformcontent #heading {
+		font-size: 1.1em;
+	}
+
+	.step2Bformcontent #margin3em {
+		font-size: 0.9rem;
+		margin-bottom: 0em;
+	}
+
+	.step2Bformcontent #transferOption {
+		font-size: small;
+	}
+
+	.step2Bformcontent #transferOptionButton {
+		transform: scale(1) !important;
+		margin-top: 0.25em !important;
+	}
+
+	.step2Bformcontent #h6 {
+		margin-top: 0.2em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 370px) {
+	.step2Bformcontent .breadcrumb {
+		margin-left: -5em;
+		width: 170%;
+	}
+
+	.step2Bformcontent .h6 {
+		font-size: x-small;
+	}
+
+	.step2Bformcontent .Step2A {
+		max-width: 85%;
+	}
+
+	.step2Bformcontent #para-text {
+		font-size: x-small;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 340px) {
+	.step2Bformcontent .breadcrumb {
+		width: 190%;
+	}
+
+	.step2Bformcontent #margin3em,
+	.step2Bformcontent .lead {
+		font-size: medium;
+	}
+
+	.step2Bformcontent .Step2A {
+		margin: 3% 0;
+		max-width: 100%;
+	}
+
+	.step2Bformcontent .buttons {
+		width: 128%;
+		margin-left: -1.5em;
+	}
+
+	.step2Bformcontent #transferOption {
+		font-size: x-small;
+	}
+
+	.step2Bformcontent #transferOptionButton {
+		transform: scale(0.8) !important;
+		margin-top: -0.1em !important;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 300px) {
+	.step2Bformcontent .breadcrumb {
+		width: 195%;
+		margin-left: -5 .2em;
+	}
+
+	.step2Bformcontent .h6 {
+		font-size: xx-small;
+	}
+
+	.step2Bformcontent .MuiTypography-root {
+		font-size: xx-large;
+	}
+
+	.step2Bformcontent #heading {
+		font-size: 0.8em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 281px) {
+	.step2Bformcontent .breadcrumb {
+		width: 200%;
+		margin-left: -5.2em;
+	}
+}

@@ -1,0 +1,191 @@
+@media (max-width: 1400px) {
+	.example-nav,
+	.footer {
+		display: none;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 880px) {
+	.card-text {
+		font-size: small;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 730px) {
+	.step1cardselements {
+		max-width: 40%;
+	}
+
+	#myInput {
+		width: 50% !important;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 765px) {
+	.card-text {
+		font-size: x-small;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 650px) {
+	.step1cardselements {
+		max-width: 40%;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 550px) {
+	.step1cardselements {
+		max-width: 45%;
+	}
+
+	.breadcrumb {
+		transform: scale(0.7);
+		margin-bottom: -1em;
+		margin-left: -1.5em;
+		width: 116%;
+	}
+
+	#heading {
+		font-size: xx-large !important;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 470px) {
+	.step1cardselements {
+		max-width: 90%;
+		margin: 1em;
+	}
+
+	#para-text {
+		font-size: small;
+	}
+
+	.cards.between {
+		flex-wrap: wrap;
+	}
+
+	.MuiButton-root {
+		width: 100% !important;
+	}
+
+	#myInput {
+		width: 100% !important;
+	}
+
+	#hide-prev {
+		display: none;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 450px) {
+	.breadcrumb {
+		margin-left: -2.5em;
+		width: 131%;
+	}
+
+	.h6 {
+		font-size: small;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 400px) {
+	.breadcrumb {
+		margin-left: -4em;
+		width: 151%;
+	}
+
+	#heading {
+		font-size: x-large !important;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 370px) {
+	.breadcrumb {
+		margin-left: -5em;
+		width: 170%;
+	}
+
+	.h6 {
+		font-size: x-small;
+	}
+
+	.step1cardselements {
+		max-width: 85%;
+	}
+
+	#para-text {
+		font-size: x-small;
+		margin-top: 1em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 340px) {
+	.breadcrumb {
+		width: 190%;
+	}
+
+	#margin3em,
+	.lead {
+		font-size: medium;
+	}
+
+	.step1cardselements {
+		margin: 1em 0;
+		max-width: 100%;
+	}
+
+	.buttons {
+		width: 128%;
+		margin-left: -1.5em;
+	}
+
+	#heading {
+		font-size: large !important;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 300px) {
+	.breadcrumb {
+		width: 195%;
+		margin-left: -5.2em;
+	}
+
+	.h6 {
+		font-size: xx-small;
+	}
+
+	.MuiTypography-root {
+		font-size: xx-large;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 281px) {
+	.breadcrumb {
+		width: 200%;
+		margin-left: -5.2em;
+	}
+}

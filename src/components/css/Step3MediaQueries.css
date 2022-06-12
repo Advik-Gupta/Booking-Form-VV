@@ -1,0 +1,274 @@
+@media (max-width: 1500px) {
+	.step3formcontent .myToolTip {
+		margin-left: -2em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 1450px) {
+	.step3formcontent .myToolTip {
+		margin-left: -3em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 1400px) {
+	.step3formcontent .myToolTip {
+		margin-left: -4em;
+	}
+
+	.step3formcontent #arrivalDateWarning {
+		display: none;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 1350px) {
+	.step3formcontent .myToolTip {
+		margin-left: -5em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 1300px) {
+	.step3formcontent .myToolTip {
+		margin-left: -6em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 1250px) {
+	.step3formcontent .myToolTip {
+		margin-left: -7em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 1200px) {
+	.step3formcontent .myToolTip {
+		margin-left: -8em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 1150px) {
+	.step3formcontent .myToolTip {
+		margin-left: -9em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 1000px) {
+	.step3formcontent .myToolTip {
+		margin-left: -10em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 950px) {
+	.step3formcontent .myToolTip {
+		margin-left: -11em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 900px) {
+	.step3formcontent .myToolTip {
+		margin-left: -12em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 860px) {
+	.step3formcontent .myToolTip {
+		margin-left: -12em;
+	}
+
+	.step3formcontent .contact-info {
+		flex-direction: column;
+	}
+
+	.step3formcontent .left,
+	.right {
+		width: 100%;
+	}
+
+	.step3formcontent .myToolTip {
+		margin-left: 6em;
+	}
+
+	.step3formcontent .three-info {
+		flex-direction: column;
+	}
+
+	.step3formcontent #contantInfoInputMsgsBox {
+		width: 100%;
+		margin-top: 1em;
+		margin-left: 0;
+	}
+
+	.step3formcontent #contantInfoInputMsgsBox:nth-child(1) {
+		margin-top: 0;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 800px) {
+	.step3formcontent .myToolTip {
+		margin-left: 5em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 750px) {
+	.step3formcontent .myToolTip {
+		margin-left: 2em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 700px) {
+	.step3formcontent .myToolTip {
+		margin-left: 0em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 650px) {
+	.step3formcontent .myToolTip {
+		margin-left: -2em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 600px) {
+	.step3formcontent .myToolTip {
+		margin-left: -4.5em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 550px) {
+	.step3formcontent .myToolTip {
+		margin-left: -6em;
+	}
+
+	.step3formcontent .breadcrumb {
+		transform: scale(0.7);
+		margin-bottom: -1em;
+		margin-left: -1.5em;
+		width: 116%;
+	}
+
+	.lastText {
+		margin-top: 1.5em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 500px) {
+	.step3formcontent .myToolTip {
+		margin-left: -8em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 470px) {
+	.step3formcontent .buttons {
+		flex-direction: column;
+	}
+
+	.step3formcontent #next {
+		margin-top: 1em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 450px) {
+	.step3formcontent .myToolTip {
+		margin-left: -10.5em;
+	}
+
+	.step3formcontent .breadcrumb {
+		margin-left: -2.5em;
+		width: 131%;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 400px) {
+	.step3formcontent .myToolTip {
+		margin-left: -12em;
+	}
+
+	.step3formcontent .breadcrumb {
+		margin-left: -4em;
+		width: 151%;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 370px) {
+	.step3formcontent .breadcrumb {
+		margin-left: -5em;
+		width: 170%;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 350px) {
+	.step3formcontent .myToolTip {
+		margin-left: -12em;
+		margin-top: -1.4em;
+	}
+
+	.step3formcontent .breadcrumb {
+		width: 190%;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 300px) {
+	.step3formcontent .myToolTip {
+		margin-left: -14em;
+		margin-top: -1.55em;
+	}
+
+	.step3formcontent .breadcrumb {
+		width: 195%;
+		margin-left: -5 .2em;
+	}
+}
+
+/* ______________________________________________________________________________________________ */
+
+@media (max-width: 281px) {
+	.step3formcontent .breadcrumb {
+		width: 200%;
+		margin-left: -5.2em;
+	}
+}

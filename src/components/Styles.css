@@ -1,0 +1,672 @@
+.body {
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	font-family: 'Poppins', sans-serif !important;
+}
+
+/* ____________________________________________________________________________________________ */
+
+.example-nav {
+	width: 100%;
+	height: 80px;
+	background-color: blue;
+	background: url('https://res.cloudinary.com/advik-gupta/image/upload/v1645028377/Booking%20Form%20Images/nav_mvrmy3.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.example-upper-image {
+	width: 100%;
+	height: 201px;
+	background-color: red;
+	background: url('https://res.cloudinary.com/advik-gupta/image/upload/v1645028385/Booking%20Form%20Images/banner-img_fhjecd.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.footer {
+	width: 100%;
+	height: 623px;
+	background-color: red;
+	background: url('https://res.cloudinary.com/advik-gupta/image/upload/v1645028377/Booking%20Form%20Images/footer_kdiytn.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* ____________________________________________________________________________________________ */
+
+.form {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: fit-content;
+	margin: 2em 0;
+}
+
+.form-content {
+	width: 70vw;
+	height: fit-content;
+	/* border: 2px solid black; */
+	padding: 1.2rem 1rem;
+	color: rgb(50, 50, 69);
+}
+
+#margin3em {
+	margin-top: 3em !important;
+}
+
+#para-text {
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
+	border-bottom: 2px solid #ddd4d4;
+	padding-bottom: 1.5rem;
+	color: #726666;
+}
+
+#myInput {
+	width: 35% !important;
+	margin-bottom: 1.5rem;
+}
+
+.cards {
+	display: flex;
+	align-items: center;
+}
+
+.cards.between {
+	justify-content: space-evenly;
+}
+
+.card {
+	max-width: 25%;
+	height: max-content;
+	margin: 1% 2.5%;
+	border-radius: 1em;
+}
+
+#stepOneScale {
+	transform: scaleY(1.1);
+}
+
+.card img {
+	border-radius: 1em 1em 0 0;
+}
+
+.nmt {
+	margin: 0 2.5%;
+}
+
+.Step2A {
+	max-width: 20%;
+	height: max-content;
+}
+
+.card.selected {
+	background-color: rgb(207, 207, 207);
+}
+
+.card-body {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+}
+
+.card:hover {
+	background-color: rgb(226, 226, 226);
+	transition: all 500ms;
+	cursor: pointer;
+}
+
+.card.selected:hover {
+	background-color: rgb(207, 207, 207);
+	transition: all 500ms;
+	cursor: pointer;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 2rem;
+	margin-bottom: 1.3rem;
+	margin-top: 1.5em;
+}
+
+.buttons #hide-prev {
+	visibility: hidden;
+}
+
+.dateAndFlight {
+	display: flex;
+	width: 100%;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+#datePick {
+	min-width: 45%;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	flex: 1;
+	margin: 0;
+}
+
+#dateRangePicker {
+	flex: 1;
+}
+
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::before,
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::after,
+.e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before,
+.e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::before,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::after,
+.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before,
+.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after {
+	background: #3498db;
+}
+
+.dates {
+	width: 50%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.flight {
+	width: 50%;
+	margin-left: 1rem;
+	display: flex;
+}
+
+#flightText {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.flight #standard-textarea {
+	width: 50%;
+	padding-bottom: 2px;
+}
+
+.transferOption {
+	display: flex;
+}
+
+.tranfers {
+	margin-bottom: 2.5em !important;
+}
+
+#transferOption {
+	margin-right: 1rem;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	margin-top: 0.5em;
+}
+
+#transferOptionButton {
+	margin-top: 0.8em;
+	margin-left: -2em;
+}
+
+#transferOptionButton {
+	transform: scale(1.3) !important;
+	margin-top: 1em !important;
+}
+
+.iDontHaveYet {
+	position: absolute;
+	width: 4.7em !important;
+	background: none !important;
+	transition: all 300ms !important;
+	transform: scale(1.5) !important;
+	margin-left: -3.5em !important;
+	margin-top: -0.6em !important;
+}
+
+.iDontHaveYet::after {
+	content: 'I dont have yet';
+	font-size: xx-small;
+	position: relative;
+	top: -0.8em;
+	left: 3.4px;
+}
+
+/* ____________________________________________________________________________________________ */
+
+#scaledYBig {
+	transform: scaleY(1.2);
+}
+
+/* ____________________________________________________________________________________________ */
+
+.myToolTip {
+	align-items: center;
+	display: flex;
+	margin-left: -1em;
+	margin-bottom: -1em;
+	z-index: 100;
+	cursor: pointer;
+}
+
+.myToolTip:hover {
+	transition: all 200ms;
+}
+
+.makeRed {
+	color: red;
+	font-weight: bold;
+}
+
+/* ____________________________________________________________________________________________ */
+
+.cards.choices {
+	flex-wrap: wrap;
+}
+
+.cards.interests {
+	flex-wrap: wrap;
+}
+
+.interestsCards {
+	flex-wrap: wrap;
+	max-width: 30%;
+	margin: 1.25%;
+}
+
+.nmtt {
+	margin: 0 1.25%;
+}
+
+/* ____________________________________________________________________________________________ */
+
+.contact-info {
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.left {
+	width: 40%;
+	margin-right: 2em;
+}
+
+.right {
+	width: 40%;
+}
+
+#contantInfoInput {
+	margin-top: 1.5rem;
+}
+
+#contantInfoInputRight {
+	width: 95%;
+	margin-top: 2.8rem;
+}
+
+.contact-info-msgs {
+	margin-top: 1.5em;
+}
+
+.three-info {
+	display: flex;
+	width: 100%;
+}
+
+#contantInfoInputMsgsBox {
+	width: 30%;
+	margin: 0 1.25%;
+}
+
+.message {
+	margin: 2.5em 1.25%;
+}
+
+.important {
+	float: left;
+	margin-top: 0.2em !important;
+	margin-right: 1em !important;
+	margin-left: -0.5em !important;
+}
+
+.arrivalDateChecker {
+	margin-top: -2.6em !important;
+	margin-right: 1em !important;
+	margin-left: 30em !important;
+}
+
+.contact-info {
+	margin-top: 1.5em;
+}
+
+.Info {
+	margin-left: 25.1em;
+	margin-bottom: 2.35em;
+	margin-top: -1.85em;
+	z-index: 10000;
+}
+
+.form-check-label {
+	margin-left: 0.4em;
+}
+
+/* ____________________________________________________________________________________________ */
+
+.last {
+	margin: 2rem 0;
+}
+
+.lastText {
+	text-align: center;
+	margin-top: 1em;
+}
+
+/* ____________________________________________________________________________________________ */
+
+.breadcrumb {
+	height: fit-content;
+	width: 100%;
+	/* margin-bottom: 1.5rem; */
+}
+
+.breadcrumb .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ____________________________________________________________________________________________ */
+
+.progress {
+	background-color: #b09465;
+}
+
+.circle.active {
+	border-color: #b09465;
+}
+
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root:hover {
+	border: 1px solid #b09465 !important;
+}
+
+.MuiButton-outlined {
+	color: white !important;
+	background-color: #b09465 !important;
+	border: 1px solid #b09465 !important;
+}
+
+.Mui-focused:after,
+.MuiInputBase-root:after {
+	border-bottom: 2px solid #b09465 !important;
+}
+
+.form-check-input:checked,
+.e-calendar .e-content td.e-today.e-selected:hover span.e-day,
+.e-calendar .e-content td.e-selected:hover span.e-day,
+.e-calendar .e-content td.e-selected.e-focused-date span.e-day,
+.e-bigger.e-small .e-calendar .e-content td.e-today.e-selected:hover span.e-day,
+.e-bigger.e-small .e-calendar .e-content td.e-selected:hover span.e-day,
+.e-bigger.e-small .e-calendar .e-content td.e-selected.e-focused-date span.e-day {
+	background-color: #b09465 !important;
+	border-color: #b09465 !important;
+}
+
+.e-calendar .e-content td.e-today.e-selected span.e-day,
+.e-calendar .e-content td.e-selected span.e-day,
+.e-calendar .e-content td.e-selected.e-focused-date span.e-day,
+.e-bigger.e-small .e-calendar .e-content td.e-today.e-selected span.e-day,
+.e-bigger.e-small .e-calendar .e-content td.e-selected span.e-day,
+.e-bigger.e-small .e-calendar .e-content td.e-selected.e-focused-date span.e-day {
+	background-color: #b09465 !important;
+	border-color: #b09465 !important;
+}
+
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root,
+.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+	color: #9ba0a5 !important;
+}
+
+.css-1x51dt5-MuiInputBase-input-MuiInput-input {
+	color: back;
+}
+
+/* .css-ghsjzk-MuiInputBase-root-MuiInput-root:after, */
+.Mui-error::after {
+	border-bottom: 2px solid #b09465 !important;
+}
+
+#flexSwitchCheckDefault {
+	border-color: #b09465 !important;
+	box-shadow: none !important;
+}
+
+.e-date-range-wrapper .e-input-group-icon.e-icons.e-active,
+.e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active,
+label.Mui-focused {
+	color: #b09465 !important;
+}
+
+.Mui-error .MuiOutlinedInput-notchedOutline {
+	border-color: red !important;
+}
+
+.Mui-error.MuiInputLabel-root {
+	color: #9ba0a5 !important;
+}
+
+.e-calendar .e-content td.e-focused-date.e-today span.e-day,
+.e-bigger.e-small .e-calendar .e-content td.e-focused-date.e-today span.e-day,
+.e-calendar .e-content td.e-today span.e-day,
+.e-calendar .e-content td.e-focused-date.e-today span.e-day,
+.e-bigger.e-small .e-calendar .e-content td.e-today span.e-day,
+.e-bigger.e-small .e-calendar .e-content td.e-focused-date.e-today span.e-day {
+	border: 1px solid #b09465;
+	color: #b09465;
+}
+
+.e-calendar .e-content td.e-focused-date.e-today span.e-day:hover,
+.e-bigger.e-small .e-calendar .e-content td.e-focused-date.e-today span.e-day:hover {
+	border: 1px solid #b09465;
+	color: #b09465;
+}
+
+.e-btn.e-flat.e-primary,
+.e-css.e-btn.e-flat.e-primary {
+	color: #b09465;
+}
+
+.e-btn.e-flat.e-primary:hover,
+.e-css.e-btn.e-flat.e-primary:hover {
+	color: #b09465;
+}
+
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::before,
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::after,
+.e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before,
+.e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::before,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::after,
+.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before,
+.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after {
+	background: #b09465;
+}
+
+.Mui-focused .MuiOutlinedInput-notchedOutline {
+	border-color: #b09465 !important;
+}
+
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline,
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline,
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline,
+.css-8ewcdo-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+	border-color: #b09465 !important;
+}
+
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused:hover .MuiOutlinedInput-notchedOutline:hover {
+	border-color: #b09465;
+}
+
+#flexCheckDefault {
+	box-shadow: none;
+}
+
+.e-input-group:not(.e-float-icon-left).e-error:not(.e-float-input)::before,
+.e-input-group:not(.e-float-icon-left).e-error:not(.e-float-input)::after,
+.e-input-group.e-float-icon-left.e-error:not(.e-float-input) .e-input-in-wrap::before,
+.e-input-group.e-float-icon-left.e-error:not(.e-float-input) .e-input-in-wrap::after,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left).e-error:not(.e-float-input)::before,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left).e-error:not(.e-float-input)::after,
+.e-input-group.e-control-wrapper.e-float-icon-left.e-error:not(.e-float-input) .e-input-in-wrap::before,
+.e-input-group.e-control-wrapper.e-float-icon-left.e-error:not(.e-float-input) .e-input-in-wrap::after {
+	background: #b09465 !important;
+}
+
+.e-input-group.e-error,
+.e-input-group.e-control-wrapper.e-error,
+.e-input-group.e-error:not(.e-float-icon-left),
+.e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left) {
+	border-bottom-color: #b09465 !important;
+}
+
+.MuiFormHelperText-root,
+.Mui-error {
+	color: #b09465 !important;
+	font-weight: 600 !important;
+	font-family: "Poppins", sans-serif !important;
+	font-size: 0.8rem !important;
+}
+
+.form-switch .form-check-input:checked {
+	color: white !important;
+}
+
+.noMarginBottom {
+	margin-bottom: 0 !important;
+}
+
+.noMargintop {
+	margin-bottom: -1em !important;
+}
+
+.h6 {
+	color: #b09465 !important;
+}
+
+#h6 {
+	margin-top: -1em;
+}
+
+.flight .MuiFormHelperText-root {
+	margin-bottom: -1.5em !important;
+}
+
+#dateWarning {
+	margin-top: -1.1em;
+	font-weight: 520;
+	margin-left: 15.2em;
+	font-size: 0.95em;
+}
+
+#addMarginBottom {
+	margin-bottom: 1.8em !important;
+}
+
+#removeMarginBottom {
+	margin-bottom: 0em !important;
+}
+
+.downMargin {
+	margin-bottom: 1.8em !important;
+}
+
+.termsAndConditions {
+	text-decoration: none;
+	color: black;
+}
+
+.termsAndConditions:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.termsCheck {
+	margin-bottom: 1em;
+}
+
+#arrivalDateErrorMsgsMargin {
+	margin-top: 6em !important;
+}
+
+#arrivalDateWarning {
+	margin-left: 35.3em;
+	margin-top: -6.5em;
+	font-weight: 520;
+	font-size: 0.95em;
+}
+
+#termsWarning {
+	margin-left: 0em;
+	margin-bottom: 1em;
+	font-weight: 700;
+}
+
+.iDontHaveArivaldateYet {
+	position: absolute;
+	width: 4.7em !important;
+	background: none !important;
+	transition: all 300ms !important;
+	transform: scale(1.5) !important;
+	margin-left: 25.5em !important;
+	margin-top: -2.6em !important;
+}
+
+.iDontHaveArivaldateYet::after {
+	content: 'I dont have yet';
+	font-size: xx-small;
+	position: relative;
+	top: -0.8em;
+	left: 3.4px;
+}
+
+#dateWarningUpper {
+	display: none;
+}
+
+.step3formcontent .travellingFrom {
+	margin-top: 0.75em !important;
+}
+
+.e-start-btn,
+.e-end-btn {
+	border: 1px solid #b09465 !important;
+}
+
+.e-active {
+	background: #b09465 !important;
+}
+
+/* ____________________________________________________________________________________________ */
+
+#flightOptionButton {
+	margin-top: 0.2em !important;
+	margin-left: -3.14em !important;
+	transform: scale(0.8) !important;
+}
+
+#flexSwitchCheckDefault:hover {
+	cursor: pointer;
+}
+
+/* ____________________________________________________________________________________________ */
