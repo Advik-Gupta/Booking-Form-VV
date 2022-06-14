@@ -122,7 +122,7 @@ export class Step1 extends Component {
                                 </div>
                             </div>
                         </div>              
-                        <p id='margin3em' className="lead">{`${values.firstName} which hotel do you prefer:`}</p>
+                        <p id='margin3em' className="lead">{`${values.firstName} which style of accommodation are you after?`}</p>
                         {
                             this.state.incomplete.includes('hotel') ?
                             <p class="h6" id="h6"><small>Please select at least one of the options</small></p> :
@@ -132,25 +132,25 @@ export class Step1 extends Component {
                             <div onClick={clicked('hotel', 'LuxuryBoutiqueHotel')} className={`card Step2A ${this.state.hotelType === 'LuxuryBoutiqueHotel' ? "selected" : ""}`}>
                                 <img onClick={() => this.setState({ hotelType: "LuxuryBoutiqueHotel" })} src="https://res.cloudinary.com/advik-gupta/image/upload/v1645028378/Booking%20Form%20Images/Step%203A/Step3A-Hotel-LuxuryBoutiqueHotel_uvoi3d.jpg" className="card-img-top" alt="..." />
                                 <div onClick={() => this.setState({ hotelType: "LuxuryBoutiqueHotel" })} className="card-body">
-                                    <p className="card-text">Luxury Boutique Hotel</p>
+                                    <p className="card-text">Luxury</p>
                                 </div>
                             </div>
                             <div onClick={clicked('hotel', 'QualityBoutiqueHotel')} className={`card Step2A ${this.state.hotelType === 'QualityBoutiqueHotel' ? "selected" : ""}`}>
                                 <img onClick={() => this.setState({ hotelType: "QualityBoutiqueHotel" })} src="https://res.cloudinary.com/advik-gupta/image/upload/v1645028380/Booking%20Form%20Images/Step%203A/Step3A-Hotel-QualityBoutiqueHotel_stlzcn.jpg" className="card-img-top" alt="..." />
                                 <div onClick={() => this.setState({ hotelType: "QualityBoutiqueHotel" })} className="card-body">
-                                    <p className="card-text">Quality Boutique Hotel</p>
+                                    <p className="card-text">Premium</p>
                                 </div>
                             </div>
                             <div onClick={clicked('hotel', 'ComfortBoutiqueHotel')} className={`card Step2A ${this.state.hotelType === 'ComfortBoutiqueHotel' ? "selected" : ""}`}>
                                 <img onClick={() => this.setState({ hotelType: "ComfortBoutiqueHotel" })} src="https://res.cloudinary.com/advik-gupta/image/upload/v1645028378/Booking%20Form%20Images/Step%203A/Step3A-Hotel-ComfortBoutiqueHotel_oqwd5e.jpg" className="card-img-top" alt="..." />
                                 <div onClick={() => this.setState({ hotelType: "ComfortBoutiqueHotel" })} className="card-body">
-                                    <p className="card-text">Comfort Boutique Hotel</p>
+                                    <p className="card-text">Comfort</p>
                                 </div>
                             </div>
                             <div onClick={clicked('hotel', 'Self-CateringEstablishment')} className={`card Step2A ${this.state.hotelType === 'Self-CateringEstablishment' ? "selected" : ""}`}>
                                 <img onClick={() => this.setState({ hotelType: "Self-CateringEstablishment" })} src="https://res.cloudinary.com/advik-gupta/image/upload/v1645028382/Booking%20Form%20Images/Step%203A/Step3A-Hotel-Self-CateringEstablishment_aiyjae.jpg" className="card-img-top" alt="..." />
                                 <div onClick={() => this.setState({ hotelType: "Self-CateringEstablishment" })} className="card-body">
-                                    <p className="card-text">Self-catering Establishment</p>
+                                    <p className="card-text">Self Catering</p>
                                 </div>
                             </div>
                         </div>
