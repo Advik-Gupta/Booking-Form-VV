@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
+import { phonePrefixes } from './phonePrefixes';
 // _______________________________________________________________________________________________
 import {TextField, Button, Typography, FormControl, Box, MenuItem, Select, InputLabel} from '@mui/material';
 import { DatePickerComponent } from '@syncfusion/ej2-react-calendars';
@@ -16,9 +17,10 @@ export class Step3 extends Component {
         super(props);
         this.state = {
           arrivalDateCheck: true,
+          phonePrefix: '',
           incomplete: []
         };
-    } 
+    }
 
     continue = (e) => {
         e.preventDefault();
@@ -37,6 +39,9 @@ export class Step3 extends Component {
             } else if (this.props.values.email === "") {
                 let old = this.state.incomplete
                 this.setState({incomplete: [...old, "email"]})
+            } else if (this.state.phonePrefix === "") {
+                let old = this.state.incomplete
+                this.setState({incomplete: [...old, "phonePrefix"]})
             } else if (this.props.values.phone === "") {
                 let old = this.state.incomplete
                 this.setState({incomplete: [...old, "phone"]})
@@ -147,6 +152,11 @@ export class Step3 extends Component {
         this.setState({incomplete: [...this.arrayRemove(old, "terms")]})
     }
 
+    removePhonePrefixFromIncomplete = () => {
+        let old = this.state.incomplete
+        this.setState({incomplete: [...this.arrayRemove(old, "phonePrefix")]})
+    }
+
     componentDidMount = () => {
         const actives = document.querySelectorAll('.active')
         const progress = document.getElementById('progress');
@@ -159,7 +169,7 @@ export class Step3 extends Component {
     
 
     render() {
-        const { values, handleChange, clicked } = this.props;
+        const { values, handleChange, handlePhonePrefixChange, clicked } = this.props;
 
         return (
             <div className='body'>
@@ -182,11 +192,11 @@ export class Step3 extends Component {
                             <div className="left">
                                 <div id="contantInfoInput">
                                     <TextField
-                                        id="standard-textarea"
+                                        id="standard-search"
                                         label={this.state.incomplete.includes('firstName') ? "Please enter first Name" : "First Name"}
                                         placeholder="Enter your First Name"
                                         fullWidth
-                                        variant="outlined"
+                                        variant="standard"
                                         onChange={handleChange('firstName')}
                                         onClick={this.removefirstNamefromIncomplete}
                                         defaultValue={values.firstName}
@@ -195,11 +205,11 @@ export class Step3 extends Component {
                                 </div>
                                 <div id="contantInfoInput">
                                     <Box sx={{ minWidth: 120 }}>
-                                        <FormControl fullWidth>
-                                            <InputLabel id="demo-simple-select-label">Age</InputLabel>
+                                        <FormControl variant="standard" fullWidth>
+                                            <InputLabel id="demo-simple-select-standard-label">Age</InputLabel>
                                             <Select
-                                                labelId="demo-simple-select-label"
-                                                id="demo-simple-select"
+                                                labelId="demo-simple-select-standard-label"
+                                                id="demo-simple-select-standard "
                                                 value={values.age}
                                                 label={this.state.incomplete.includes('age') ? "Please select your age" : "Age"}
                                                 onChange={handleChange('age')}
@@ -293,12 +303,35 @@ export class Step3 extends Component {
                                     </Box>
                                 </div>
                                 <div id="contantInfoInput">
+                                    <Box sx={{ minWidth: 120 }}>
+                                        <FormControl variant="standard" fullWidth>
+                                            <InputLabel id="demo-simple-select-label">Code</InputLabel>
+                                            <Select
+                                                labelId="demo-simple-select-label"
+                                                id="demo-simple-select"
+                                                value={this.state.phonePrefix}
+                                                label={this.state.incomplete.includes('phonePrefix') ? "Please select country code" : "Code"}
+                                                onChange={(event) => {
+                                                    this.setState({ phonePrefix: event.target.value })
+                                                    handlePhonePrefixChange(event.target.value);
+                                                }}
+                                                onClick={this.removePhonePrefixFromIncomplete}
+                                                error={this.state.phonePrefix === '' ? true : false}
+                                            >
+                                            {
+                                                phonePrefixes.map((prefix, index) => {
+                                                    return (<MenuItem value={prefix.code}>{prefix.name}: {prefix.code}</MenuItem>)
+                                                })
+                                            }
+                                            </Select>
+                                        </FormControl>
+                                    </Box>
                                     <TextField
-                                        id="standard-textarea"
+                                        id="standard-search"
                                         label={this.state.incomplete.includes('phone') ? "Please enter your phone number" : "Phone number"}
                                         placeholder="Enter your phone number"
                                         fullWidth
-                                        variant="outlined"
+                                        variant="standard"
                                         onChange={handleChange('phone')}
                                         defaultValue={values.phone}
                                         error={this.state.incomplete.includes('phone') ? true : false}
@@ -307,7 +340,7 @@ export class Step3 extends Component {
                                 </div>
                                 <div id="contantInfoInput">
                                     <Box sx={{ minWidth: 120 }}>
-                                        <FormControl fullWidth>
+                                        <FormControl variant="standard" fullWidth>
                                             <InputLabel id="demo-simple-select-label">Nights</InputLabel>
                                             <Select
                                                 labelId="demo-simple-select-label"
@@ -340,7 +373,7 @@ export class Step3 extends Component {
                                         label={this.state.incomplete.includes('lastName') ? "Please enter your last name" : "Last Name"}
                                         placeholder="Enter your Last Name"
                                         fullWidth
-                                        variant="outlined"
+                                        variant="standard"
                                         onChange={handleChange('lastName')}
                                         defaultValue={values.lastName}
                                         onClick={this.removeLastNameFromIncomplete}
@@ -353,7 +386,7 @@ export class Step3 extends Component {
                                         label={this.state.incomplete.includes('email') ? "Please enter your email" : "Email"}
                                         placeholder="Enter your email"
                                         fullWidth
-                                        variant="outlined"
+                                        variant="standard"
                                         onChange={handleChange('email')}
                                         defaultValue={values.email}
                                         onClick={this.removeEmailFromIncomplete}
@@ -381,7 +414,7 @@ export class Step3 extends Component {
                                         label={this.state.incomplete.includes('travellingFrom') ? "Where are you travelling from?" : "Travelling From"}
                                         placeholder="Travelling From"
                                         fullWidth
-                                        variant="outlined"
+                                        variant="standard"
                                         onChange={handleChange('travellingFrom')}
                                         defaultValue={values.travellingFrom}
                                         onClick={this.removeTravellingFromFromIncomplete}
@@ -399,7 +432,7 @@ export class Step3 extends Component {
                             <div className="three-info">
                                 <div id="contantInfoInputMsgsBox">
                                     <Box sx={{ minWidth: 120 }}>
-                                        <FormControl fullWidth>
+                                        <FormControl variant="standard" fullWidth>
                                             <InputLabel id="demo-simple-select-label">No. of Adults</InputLabel>
                                             <Select
                                                 labelId="demo-simple-select-label"
@@ -426,7 +459,7 @@ export class Step3 extends Component {
                                 </div>
                                 <div id="contantInfoInputMsgsBox">
                                     <Box sx={{ minWidth: 120 }}>
-                                        <FormControl fullWidth>
+                                        <FormControl variant="standard" fullWidth>
                                             <InputLabel id="demo-simple-select-label">No. of Children</InputLabel>
                                             <Select
                                                 labelId="demo-simple-select-label"
@@ -454,7 +487,7 @@ export class Step3 extends Component {
                                 </div>
                                 <div id="contantInfoInputMsgsBox">
                                     <Box sx={{ minWidth: 120 }}>
-                                        <FormControl fullWidth>
+                                        <FormControl variant="standard" fullWidth>
                                             <InputLabel id="demo-simple-select-label">Budget per person</InputLabel>
                                             <Select
                                                 labelId="demo-simple-select-label"
@@ -481,6 +514,7 @@ export class Step3 extends Component {
                                 label={this.state.incomplete.includes('message') ? "Tell us a little about your dream holiday in Valletta so that we can help you better" : "Tell us about your dream holiday in Valletta"}
                                 placeholder="Message"
                                 fullWidth
+                                variant="standard"
                                 rows={5}
                                 multiline
                                 onChange={handleChange('message')}
@@ -497,6 +531,7 @@ export class Step3 extends Component {
                                 fullWidth
                                 rows={3}
                                 multiline
+                                variant="standard"
                                 onChange={handleChange('specialRequests')}
                                 defaultValue={values.specialRequests}
                             />

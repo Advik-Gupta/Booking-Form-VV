@@ -103,7 +103,7 @@ export class Step2 extends Component {
             "19": this.props.values.flightNumer,
             "20": `${this.props.values.age} years young`,
             "21": this.props.values.email,
-            "22": this.props.values.phone,
+            "22": `${this.props.values.phonePrefix} ${this.props.values.phone}`,
             "23": `${TransferDate(normalArrivalDate)}`,
             "24": `${this.props.values.nights} nights`,
             "25": this.props.values.travellingFrom,

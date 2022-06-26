@@ -191,7 +191,7 @@ export class Step1 extends Component {
                                 </div>
                             </div>  
                             <div onClick={clickedChoices('holidayType', 'foodie')} className={`card nmt Step2A ${this.state.choices.includes('foodie') ? "selected" : ""}`}>
-                                <img onClick={this.choicesMethod('choices', 'foodie')} src="https://res.cloudinary.com/advik-gupta/image/upload/v1655200278/Booking%20Form%20Images/Step%203B%20-%20What%20are%20you%20interested%20in/type/716d5919-a250-4627-bf9d-b84e56bdcee4_1_dux9w9.jpg" className="card-img-top" alt="..." />
+                                <img onClick={this.choicesMethod('choices', 'foodie')} src="https://res.cloudinary.com/advik-gupta/image/upload/v1645028390/Booking%20Form%20Images/Step%203B%20-%20What%20are%20you%20interested%20in/type/Step3B-TypeOfHoliday-Foodie_x0lszf.jpg" className="card-img-top" alt="..." />
                                 <div onClick={this.choicesMethod('choices', 'foodie')} className="card-body">
                                     <p className="card-text">Foodie</p>
                                 </div>
@@ -255,7 +255,7 @@ export class Step1 extends Component {
                             </div>
                         </div>
 
-                        <p className="lead">{`${values.firstName} which style of accommodation are you after?`}</p>
+                        <p className="lead">{`${values.firstName} which hotel do you prefer:`}</p>
                         {
                             this.state.incomplete.includes('hotel') ?
                             <p class="h6" id="h6"><small>Please select at least one of the options</small></p> :
@@ -265,25 +265,25 @@ export class Step1 extends Component {
                             <div onClick={clicked('hotel', 'LuxuryBoutiqueHotel')} className={`card Step2A ${this.state.hotelType === 'LuxuryBoutiqueHotel' ? "selected" : ""}`}>
                                 <img onClick={() => this.setState({ hotelType: "LuxuryBoutiqueHotel" })} src="https://res.cloudinary.com/advik-gupta/image/upload/v1645028378/Booking%20Form%20Images/Step%203A/Step3A-Hotel-LuxuryBoutiqueHotel_uvoi3d.jpg" className="card-img-top" alt="..." />
                                 <div onClick={() => this.setState({ hotelType: "LuxuryBoutiqueHotel" })} className="card-body">
-                                    <p className="card-text">Luxury</p>
+                                    <p className="card-text">Luxury Boutique Hotel</p>
                                 </div>
                             </div>
                             <div onClick={clicked('hotel', 'QualityBoutiqueHotel')} className={`card Step2A ${this.state.hotelType === 'QualityBoutiqueHotel' ? "selected" : ""}`}>
                                 <img onClick={() => this.setState({ hotelType: "QualityBoutiqueHotel" })} src="https://res.cloudinary.com/advik-gupta/image/upload/v1645028380/Booking%20Form%20Images/Step%203A/Step3A-Hotel-QualityBoutiqueHotel_stlzcn.jpg" className="card-img-top" alt="..." />
                                 <div onClick={() => this.setState({ hotelType: "QualityBoutiqueHotel" })} className="card-body">
-                                    <p className="card-text">Premium</p>
+                                    <p className="card-text">Quality Boutique Hotel</p>
                                 </div>
                             </div>
                             <div onClick={clicked('hotel', 'ComfortBoutiqueHotel')} className={`card Step2A ${this.state.hotelType === 'ComfortBoutiqueHotel' ? "selected" : ""}`}>
                                 <img onClick={() => this.setState({ hotelType: "ComfortBoutiqueHotel" })} src="https://res.cloudinary.com/advik-gupta/image/upload/v1645028378/Booking%20Form%20Images/Step%203A/Step3A-Hotel-ComfortBoutiqueHotel_oqwd5e.jpg" className="card-img-top" alt="..." />
                                 <div onClick={() => this.setState({ hotelType: "ComfortBoutiqueHotel" })} className="card-body">
-                                    <p className="card-text">Comfort</p>
+                                    <p className="card-text">Comfort Boutique Hotel</p>
                                 </div>
                             </div>
                             <div onClick={clicked('hotel', 'Self-CateringEstablishment')} className={`card Step2A ${this.state.hotelType === 'Self-CateringEstablishment' ? "selected" : ""}`}>
                                 <img onClick={() => this.setState({ hotelType: "Self-CateringEstablishment" })} src="https://res.cloudinary.com/advik-gupta/image/upload/v1645028382/Booking%20Form%20Images/Step%203A/Step3A-Hotel-Self-CateringEstablishment_aiyjae.jpg" className="card-img-top" alt="..." />
                                 <div onClick={() => this.setState({ hotelType: "Self-CateringEstablishment" })} className="card-body">
-                                    <p className="card-text">Self Catering</p>
+                                    <p className="card-text">Self-catering Establishment</p>
                                 </div>
                             </div>
                         </div>

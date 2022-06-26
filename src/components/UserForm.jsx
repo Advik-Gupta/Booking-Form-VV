@@ -37,6 +37,7 @@ export class UserForm extends Component {
         specialRequests: '',
         terms: false,
         newsLetter: false,
+        phonePrefix: '',
     }
 
     // Remove from aaray func
@@ -68,6 +69,11 @@ export class UserForm extends Component {
     };
 
     // Handle fields change
+    handlePhonePrefixChange = (code) => {
+        this.setState({ 'phonePrefix': code });
+    };
+
+    // Handle fields change
     clickedChoices = (input, value) => e => {
         const obj = this.state[input];
         if (!obj.includes(value)) {
@@ -91,8 +97,8 @@ export class UserForm extends Component {
     
     render() {
         const { step } = this.state;
-        const { type, hotel, holidayType, interests, lastName, date, flightNumer, transfersRequired, transferOption, firstName, age, email, phone, arrivalDate, nights, travellingFrom, adults, children, budgetPerPersonPerNight, message, specialRequests, terms, newsLetter} = this.state;
-        const values = { step, type, hotel, holidayType, interests, lastName, date, flightNumer, transfersRequired, transferOption, firstName, age, email, phone, arrivalDate, nights, travellingFrom, adults, children, budgetPerPersonPerNight, message, specialRequests, terms, newsLetter};
+        const { type, hotel, holidayType, interests, lastName, date, flightNumer, transfersRequired, transferOption, firstName, age, email, phone, phonePrefix, arrivalDate, nights, travellingFrom, adults, children, budgetPerPersonPerNight, message, specialRequests, terms, newsLetter} = this.state;
+        const values = { step, type, hotel, holidayType, interests, lastName, date, flightNumer, transfersRequired, transferOption, firstName, age, email, phone, phonePrefix, arrivalDate, nights, travellingFrom, adults, children, budgetPerPersonPerNight, message, specialRequests, terms, newsLetter};
         
         switch (step) {
             case 1:
@@ -137,6 +143,7 @@ export class UserForm extends Component {
                         nextStep={this.nextStep}
                         prevStep={this.prevStep}
                         handleChange={this.handleChange}
+                        handlePhonePrefixChange={this.handlePhonePrefixChange}
                         clicked={this.clicked}
                         values={values}
                         setting={this.setting}
