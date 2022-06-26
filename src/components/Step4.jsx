@@ -120,7 +120,7 @@ export class Step2 extends Component {
 
           const config = {
             method: 'post',
-            url: 'https://seal-app-mfc6k.ondigitalocean.app/tailoryourjourney',
+            url: 'XXXX-Private-API-Link-XXX',
             headers: { 
               'Content-Type': 'application/json'
             },
