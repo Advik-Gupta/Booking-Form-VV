@@ -320,7 +320,7 @@ export class Step3 extends Component {
                                             >
                                             {
                                                 phonePrefixes.map((prefix, index) => {
-                                                    return (<MenuItem value={prefix.code}>{prefix.name}: {prefix.code}</MenuItem>)
+                                                    return (<MenuItem value={prefix.code}>{prefix.code}</MenuItem>)
                                                 })
                                             }
                                             </Select>
